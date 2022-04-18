@@ -1,0 +1,188 @@
+/* INPUT */
+input:-webkit-autofill,
+input:-moz-autofill,
+input:-webkit-autofill:hover,
+input:-moz-autofill:hover,
+input:-webkit-autofill:focus,
+input:-moz-autofill:focus,
+input:-webkit-autofill:active,
+input:-moz-autofill:active,
+select:-webkit-autofill,
+select:-moz-autofill,
+select:-webkit-autofill:hover,
+select:-moz-autofill:hover,
+select:-webkit-autofill:focus,
+select:-moz-autofill:focus,
+select:-webkit-autofill:active,
+select:-moz-autofill:active {
+}
+input,
+select,
+textarea,
+button {
+  border: none;
+  padding: 5px 10px;
+  transition: all 0.5s;
+  background-color: var(--ow2);
+}
+input,
+select,
+textarea {
+  padding: 20px 10px;
+  border: solid 2px transparent;
+}
+input[type="radio"] {
+  background-color: var(--cwd2);
+}
+input:focus:not([type="radio"]),
+textarea:focus,
+select:focus {
+  outline: none !important;
+  border-width: 2px !important;
+  border-color: var(--color3) !important;
+  background-color: white !important;
+}
+textarea {
+  border: none;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  cursor: pointer;
+}
+
+.formSegment {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+.formSegment > label {
+  padding: 5px 0;
+  font-size: 20px;
+}
+.fsFull {
+  width: 100% !important;
+}
+.fsSemi {
+  width: 45% !important;
+}
+.fs-radio_checkbox-row {
+  display: flex;
+  padding: 20px 0;
+  gap: 10px;
+}
+.fs-radio_checkbox-row label input {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 100%;
+  padding: initial !important;
+}
+.fs-radio_checkbox-row label input:checked {
+  background-color: var(--color1);
+}
+.fs-radio_checkbox-row label {
+  display: flex;
+  align-items: center;
+  color: grey;
+}
+.fs-radio_checkbox-column {
+  display: flex;
+  flex-direction: column;
+}
+.formSegment section {
+  position: relative;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* z-index: 655; */
+  /* overflow-x: hidden; */
+  /* overflow: hidden; */
+}
+.formSegment section input {
+  width: 100%;
+  overflow: hidden;
+}
+.formSegment section input[type="password"]:focus + .password-icon {
+  /* background-color: var(--color3); */
+}
+/* Form Btn */
+.formBtn {
+  margin: 10px auto;
+  width: 100%;
+}
+.formBtn button {
+  background-color: var(--color1);
+  color: white;
+  transition: all 0.5s;
+  padding: 15px 35px;
+  font-size: 120%;
+}
+
+/* Form Password field icon */
+.password-icon,
+.password-icon-visible {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  bottom: 0px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 10px;
+  font-size: 25px;
+}
+.password-icon {
+  transition: all 0.5s;
+  color: grey;
+}
+.password-icon-visible {
+  color: var(--color1);
+}
+
+/* Field text search */
+.fs-suggestionList {
+  z-index: 999999999;
+  position: absolute;
+  top: 105%;
+  width: 100%;
+  max-height: 130px;
+  background-color: var(--cwd2);
+  border-radius: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.fs-suggestionList-visible {
+  /* display: flex; */
+}
+.fs-suggestionList span {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.fs-suggestionList span:hover {
+  background-color: var(--color1);
+  color: white;
+}
+/*  */
+
+/* Other auth */
+.log-or-register {
+  width: 100%;
+  text-align: center;
+}
+.log-or-register p {
+  color: grey;
+}
+.log-or-register a {
+  color: var(--color1);
+}
+
+@media screen and (max-width: 512px) {
+}

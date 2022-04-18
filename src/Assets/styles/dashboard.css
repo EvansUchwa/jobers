@@ -1,0 +1,203 @@
+.dashboard {
+  padding: 100px 0;
+  background-color: var(--colorBgw);
+  z-index: 1;
+  /* position: sticky; */
+}
+.dash-menu-title{
+  width: 90%;
+  margin: 25px auto 0 auto;
+  text-align: center;
+  color: var(--color4);
+}
+.dash-menu-search{
+  width: 90%;
+  margin: 25px auto;
+}
+.dash-menu-search input{
+  width: 100%;
+}
+.dashFloatedAddButton{
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  background-image: linear-gradient(to right, #247b91, #4c8e85, #809c7d, #afa786, #d3b3a3);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  line-height: 80px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.dashStudentHello {
+  z-index: 2;
+  width: 50%;
+  margin: auto;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 20px;
+  /* background-color: var(--colorBgw); */
+  background-image: linear-gradient(to right, #247b91, #4c8e85, #809c7d, #afa786, #d3b3a3);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 15px;
+  position: relative;
+}
+.dashStudentHello img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: solid 4px white;
+}
+
+.dsh-infos p {
+  color: white;
+}
+.dsh-infos p b {
+  color: white;
+}
+
+.dsh-downloads{
+  margin-left: auto;
+  font-size: 12px;
+  display: flex;
+}
+.dsh-downloads span{
+  padding: 5px 8px;
+  background-color: white;
+}
+.dsh-downloads span:nth-child(1){
+border-radius: 10px 0 0 10px;
+}
+.dsh-downloads span:nth-child(2){
+  border-radius: 0 10px 10px 0px;
+  margin-left: 2px;
+}
+/* Dash navigator */
+.dashHomeNavigator {
+  width: 80%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+.dashHomeNavigator > section {
+  width: 100%;
+
+  display: flex;
+}
+
+.dhn-navItem {
+  justify-content: space-between;
+}
+.dhn-navResult {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  animation: resDivFade 0.5s 1;
+  /* background-color: aqua; */
+}
+.dhn-navResult input[type="search"]{
+  background-color: white;
+}
+
+.dashHomeNavigator label input {
+  display: none;
+}
+.dashHomeNavigator label input:checked + section span {
+  border: solid 4px var(--color1);
+}
+.dashHomeNavigator label input:checked + section span i {
+  color: var(--color1);
+}
+.dashHomeNavigator label {
+  width: 10%;
+  color: var(--cbd4);
+}
+.dashHomeNavigator label section {
+  text-align: center;
+}
+.dashHomeNavigator label span {
+  border: solid 4px white;
+  transition: all 0.5s;
+  background-color: white;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.dashHomeNavigator label span i {
+  font-size: 50px;
+  transition: all 0.5s;
+}
+/*  */
+
+@media screen and (max-width: 512px) {
+  .dash-menu-title{
+    font-size: 20px;
+  }
+  .dashFloatedAddButton{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .dashStudentHello {
+    width: 98%;
+    padding: 10px 7px;
+    gap: 10px;
+  }
+  .dashStudentHello section p {
+    font-size: 14px;
+  }
+  .dsh-downloads{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .dsh-downloads span{
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .dashHomeNavigator {
+    width: 98%;
+  }
+  .dashHomeNavigator label {
+    width: 20%;
+  }
+  .dashHomeNavigator label span {
+    padding: 15px 0;
+  }
+  .dashHomeNavigator label span i {
+    font-size: 25px;
+  }
+  .dashHomeNavigator label p {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (min-width: 512px) and (max-width: 768px){
+  .dashFloatedAddButton{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+  .dashStudentHello{
+    width: 80%;
+  }
+  .dashHomeNavigator {
+    width: 95%;
+  }
+  .dashHomeNavigator label {
+    width: 16%;
+  }
+
+}

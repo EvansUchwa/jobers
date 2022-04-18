@@ -1,0 +1,176 @@
+:root {
+  --cwd1: #f2f2f2;
+  --cwd2: #e6e6e6;
+  --cwd3: #d9d9d9;
+  --cwd4: #cccccc;
+
+  --cbd1: #0d0d0d;
+  --cbd2: #1a1a1a;
+  --cbd3: #262626;
+  --cbd4: #333333;
+
+  --googleColor: #c22322;
+  --whatsappColor: #46c756;
+  --telColor: #128c7e;
+
+  --ob2: rgba(0, 0, 0, 0.2);
+  --ob4: rgba(0, 0, 0, 0.4);
+  --ob6: rgba(0, 0, 0, 0.6);
+  --ob8: rgba(0, 0, 0, 0.8);
+  --ob10: rgba(0, 0, 0, 1);
+
+  --ow2: rgba(255, 255, 255, 0.2);
+  --ow4: rgba(255, 255, 255, 0.4);
+  --ow6: rgba(255, 255, 255, 0.6);
+  --ow8: rgba(255, 255, 255, 0.8);
+  --ow10: rgba(255, 255, 255, 1);
+
+  --errorColor: #b30000;
+  --successColor: #38d368;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: rebeccapurple; */
+  scroll-behavior: smooth;
+}
+label,
+span,
+a {
+  display: inline-block;
+}
+label,
+a {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+}
+/* The margin */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.m-5 {
+  margin: 5px;
+}
+.m-10 {
+  margin: 10px;
+}
+.m-15 {
+  margin: 15px;
+}
+.m-20 {
+  margin: 20px;
+}
+.m-25 {
+  margin: 25px;
+}
+/* Top */
+.mt-5 {
+  margin: 5px;
+}
+.mt-10 {
+  margin: 10px;
+}
+.mt-15 {
+  margin: 15px;
+}
+.mt-20 {
+  margin: 20px;
+}
+.mt-25 {
+  margin: 25px;
+}
+
+/* Left */
+.ml-5 {
+  margin: 5px;
+}
+.ml-10 {
+  margin: 10px;
+}
+.ml-15 {
+  margin: 15px;
+}
+.ml-20 {
+  margin: 20px;
+}
+.ml-25 {
+  margin: 25px;
+}
+
+/* Right */
+.mr-5 {
+  margin: 5px;
+}
+.mr-10 {
+  margin: 10px;
+}
+.mr-15 {
+  margin: 15px;
+}
+.mr-20 {
+  margin: 20px;
+}
+.mr-25 {
+  margin: 25px;
+}
+
+/* Bottom */
+.mb-5 {
+  margin: 5px;
+}
+.mb-10 {
+  margin: 10px;
+}
+.mb-15 {
+  margin: 15px;
+}
+.mb-20 {
+  margin: 20px;
+}
+.mb-25 {
+  margin: 25px;
+}
+/*  */
+
+/*  */
+.flex {
+  display: flex;
+}
+/*  */
+
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}

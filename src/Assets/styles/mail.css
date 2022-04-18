@@ -1,0 +1,32 @@
+.mailContainer{
+    min-height: 100vh;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mailContainer section{
+text-align: center;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 90%;
+}
+
+.mailContainer section img{
+    height: 50vh;
+    object-fit: contain;
+}
+
+.mailContainer section b{
+        color: white;
+        margin: auto;
+        font-size: 3vh;
+}
+.mailContainer section a{
+    margin: 25px 0;
+    background-color: white;
+    color: var(--color1);
+    padding: 10px 25px;
+}

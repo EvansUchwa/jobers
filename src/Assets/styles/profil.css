@@ -1,0 +1,113 @@
+.profil {
+  background-color: var(--cwd1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profil-finalisation {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 0;
+  width: 40%;
+}
+.profil-finalisation h1,
+.profil-finalisation h4 {
+  text-align: center;
+  color: var(--color3);
+}
+.pf-steps-indicator {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+}
+.pf-steps-indicator > div {
+  width: calc(100% / 3);
+  position: relative;
+  text-align: center;
+  z-index: 999999;
+}
+.pf-steps-indicator > div::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--cwd2);
+  z-index: -9998;
+  transition: all 0.5s;
+}
+.pf-steps-indicator > div span {
+  background-color: var(--cwd2);
+  color: grey;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.step-active::after {
+  background-color: var(--color1) !important;
+}
+.step-active span {
+  background-color: var(--color1) !important;
+  color: white !important;
+}
+
+.profil-finalisation form {
+  width: 95%;
+  margin: auto;
+}
+.profil-finalisation input:not([type="radio"]) {
+  background-color: var(--cwd2);
+}
+.stepNavigator {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.stepNavigator span {
+  background-color: var(--color1);
+  padding: 10px 15px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.stepNavigator button {
+  background-color: var(--color1);
+  padding: 10px 15px;
+  color: white;
+  font-family: "Poppins-SemiBold";
+  font-size: 16px;
+}
+
+/* Finalised Msg*/
+.profilFinalisedMessage {
+  text-align: center;
+}
+.profilFinalisedMessage img {
+  width: 60%;
+}
+.profilFinalisedMessage h3 {
+  color: var(--color1);
+  font-size: 30px;
+}
+.profilFinalisedMessage p {
+  color: var(--color3);
+}
+.profilFinalisedMessage section {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 512px) {
+  .profil-finalisation {
+    width: 90%;
+  }
+}

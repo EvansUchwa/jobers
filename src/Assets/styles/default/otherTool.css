@@ -1,0 +1,28 @@
+.default-tabs {
+  width: 50%;
+  background-color: white;
+}
+
+.default-tabs .dt-title {
+  display: flex;
+  justify-content: space-evenly;
+}
+.default-tabs .dt-title label {
+  text-align: center;
+  padding: 10px 15px;
+  border: solid 2px var(--cwd1);
+  background-color: var(--cwd1);
+  width: calc(100% / 3.5);
+  transition: all 0.5s;
+}
+.tabLabelSelected {
+  background-color: red !important;
+  color: white;
+}
+
+.default-tabs .dt-result {
+  background-color: var(--cwd2);
+  padding: 15px;
+  width: 90%;
+  margin: 10px auto;
+}

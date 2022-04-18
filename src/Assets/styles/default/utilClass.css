@@ -1,0 +1,55 @@
+.disabled {
+  background-color: var(--cwd4) !important;
+  color: grey !important;
+}
+.fieldError,
+.fieldSuccess {
+  width: 90%;
+  text-align: center;
+  margin: auto !important;
+  padding: 5px 0;
+  font-size: 15px;
+}
+.fieldError {
+  color: var(--errorColor);
+  animation: errAnim 0.5s ease 1;
+}
+
+.rounded {
+  border-radius: 100%;
+}
+.semiRounded {
+  border-radius: 50px;
+}
+
+
+.simpleSkeleton{
+  cursor: progress; 
+  background: 
+    linear-gradient(0.25turn, transparent, var(--cwd1), transparent),
+    linear-gradient(var(--cwd2), var(--cwd2)),
+    radial-gradient(38px circle at 19px 19px, var(--cwd2) 50%, transparent 51%),
+    linear-gradient(var(--cwd2), var(--cwd2)
+    );  
+  background-repeat: no-repeat;
+  background-size: 315px 250px, 315px 180px, 100px 100px, 225px 30px; 
+  background-position: -315px 0, 0 0, 0px 190px, 50px 195px; 
+  animation: simpleSkeletonLoading 1.5s infinite;
+}
+@keyframes simpleSkeletonLoading {  
+  to {
+    background-position: 315px 0, 0 0, 0 190px, 50px 195px;
+  }
+}
+
+
+@keyframes errAnim {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
